@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .option{
+        @apply cursor-pointer hover:bg-gray-200 transition duration-200
+        ease-out p-1 rounded-lg
+    }
+}
+.toggle-icon-open{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    z-index: 100;
+    filter: drop-shadow(0 10px 8px rgb(0 0 0/0.04));
+    padding: 1rem;
+    border-radius: 50%;
+    
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.toggle-icon-open:hover{
+    background-color: #E8EAED;
+}
+.toggle-icon-close{
+    position: fixed;
+    right: -1.5rem;
+    bottom: 5px;
+    z-index: 100;
+    
+    padding: 1rem;
+    padding-right: 2rem;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.toggle-icon-close:hover{
+    right: -0.5rem;
+    background-color: #E8EAED;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.editor{
+    overflow-y: scroll !important;
+    max-height: 40vh;
+    height: 100% !important;
+    
+}
+.main-section{
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
+.toolTip{
+    height: auto;
+    width: 15px;
+    font-size: small !important;
+    text-align: start !important;
+    padding: 0;
+}
